@@ -1,0 +1,9 @@
+# setup file for the conda environment (conda env create -f environment.yaml)
+name: fractalgebra
+
+channels:
+  - default
+  - conda-forge
+
+dependencies:
+  - python=3.8
