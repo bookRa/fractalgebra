@@ -1,5 +1,7 @@
 import pytest
-from fractalgebra.helpers import RationalNumber, Calc
+
+from fractalgebra.helpers import Calc, RationalNumber
+
 
 # Test the Calc.add method
 @pytest.mark.parametrize(
@@ -15,4 +17,3 @@ def test_add_rationals(num1, den1, num2, den2, num_expected, den_expected):
     test_b = RationalNumber(numerator=num2, denominator=den2)
     expected_ans = RationalNumber(numerator=num_expected, denominator=den_expected)
     assert Calc.add(test_a, test_b) == expected_ans
-

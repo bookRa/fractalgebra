@@ -1,8 +1,10 @@
 import re
-from typing import Callable, Dict, List, Optional,  Union
+from typing import Callable, Dict, List, Optional, Union
+
 from .calculator import Calc
-from .rational_number import RationalNumber
 from .errors import InvalidFractionError, InvalidInputError
+from .rational_number import RationalNumber
+
 
 class Fractalgebra:
     """top-level class for parsing the input string and returning the answer"""
@@ -126,5 +128,3 @@ class Fractalgebra:
                 match_results
             )
             return Fractalgebra.from_mixed_fraction(clean_results)
-
-        

@@ -1,5 +1,6 @@
 from typing import Optional, Union
 
+
 class InvalidFractionError(Exception):
     """Raised when a fraction is invalid
     Attributes:

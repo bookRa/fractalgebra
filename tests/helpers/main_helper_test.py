@@ -1,5 +1,7 @@
 import pytest
+
 from fractalgebra.helpers import Fractalgebra, RationalNumber
+
 
 # Test the Fractalgebra.transform_input method
 @pytest.mark.parametrize(
@@ -18,6 +20,7 @@ from fractalgebra.helpers import Fractalgebra, RationalNumber
 )
 def test_transform_input(input, expected):
     assert Fractalgebra.transform_input(input) == expected
+
 
 # Test the Fractalgebra.parse_input method
 @pytest.mark.parametrize(

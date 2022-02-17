@@ -1,6 +1,8 @@
 from dataclasses import dataclass
-from typing import Dict,  Optional
+from typing import Dict, Optional
+
 from .errors import InvalidFractionError
+
 
 @dataclass
 class RationalNumber:

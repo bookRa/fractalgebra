@@ -1,5 +1,6 @@
 from .rational_number import RationalNumber
 
+
 class Calc:
     """Contains various utilities for fractalgebra"""
 
@@ -40,4 +41,3 @@ class Calc:
                 denominator=(a.denominator * b.numerator),
             )
         )
-

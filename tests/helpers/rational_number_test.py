@@ -1,5 +1,7 @@
 import pytest
+
 from fractalgebra.helpers import RationalNumber
+
 
 # Test RationalNumber.as_mixed_fraction method
 @pytest.mark.parametrize(
