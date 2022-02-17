@@ -1,6 +1,6 @@
 import re
 from dataclasses import dataclass
-from typing import Callable, ClassVar, Dict, List, Literal, Optional, Union
+from typing import Callable, Dict, List,  Optional, Union
 
 
 @dataclass
@@ -207,7 +207,7 @@ class Fractalgebra:
                 transformed.append(input_list[i])
         if not isinstance(transformed[-1], RationalNumber):
             raise InvalidInputError(
-                f"Last argument should be a fraction, not an operator"
+                "Last argument should be a fraction, not an operator"
             )
         return transformed
 

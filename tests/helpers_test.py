@@ -1,8 +1,6 @@
 from fractions import Fraction as frac
 
-import hypothesis.strategies as st
 import pytest
-from hypothesis import Verbosity, given, settings
 
 from fractalgebra.helpers import Calc, Fractalgebra, RationalNumber
 

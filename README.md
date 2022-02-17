@@ -50,9 +50,9 @@ which any user can simply drop into their file system begin using fractalgebra w
     > poetry run pytest                                                                                            
     Test session starts (platform: linux, Python 3.9.7, pytest 7.0.1, pytest-sugar 0.9.4)
     ...
-    tests/fractalgebra_test.py ✓                                                                         4% ▌
-    tests/helpers_test.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                65% ██████▌
-    tests/main_test.py ✓✓✓✓✓✓✓✓                                                                        100% ██████████
+    tests/fractalgebra_test.py ✓                                          4% ▌
+    tests/helpers_test.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                 65% ██████▌
+    tests/main_test.py ✓✓✓✓✓✓✓✓                                         100% ██████████
 
     Results (0.33s):
         23 passed

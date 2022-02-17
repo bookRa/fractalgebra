@@ -1,5 +1,4 @@
 import pytest
-import typer
 from typer.testing import CliRunner
 
 from fractalgebra.main import app
