@@ -38,7 +38,7 @@ your Python env manager of choice (I prefer [Conda](https://conda.io/projects/co
     ```
 
 
-### `TODO:` Downloadable Binary
+### `TODO:` Downloadable Binary (See [Issue #3](https://github.com/bookRa/fractalgebra/issues/3))
  > time-permitting, I would use a tool like [PyInstaller](https://pyinstaller.readthedocs.io/en/stable/operating-mode.html)
 in combination with GitHub Actions to publish an executable or zip/folder (to the Releases Page)
 which any user can simply drop into their file system begin using fractalgebra without relying on any external tooling (including Python).
