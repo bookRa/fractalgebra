@@ -26,16 +26,15 @@ def main(
     using the pattern <fraction> <operator> <fraction> <operator> <fraction>
         
     """
-    typer.echo(ctx.args)
-    typer.echo(ctx.params)
-    input_str = [ctx.params['input']] + ctx.args
-    typer.echo(' '.join(input_str))
+    # typer.echo(ctx.args)
+    # typer.echo(ctx.params)
+    input_list = [ctx.params['input']] + ctx.args
+    # typer.echo(input_list)
     
     try:
-        fractalgebra_answer: str = Fractalgebra.solve(input_str)
+        fractalgebra_answer: str = Fractalgebra.solve(input_list)
         typer.echo(f"= {fractalgebra_answer}")
     except Exception as e:
-        typer.echo("There was a problem solving your problem :(")
         typer.echo(e)
 
 if __name__ == "__main__":

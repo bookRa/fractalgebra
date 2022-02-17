@@ -147,25 +147,16 @@ class Fractalgebra:
     
     @staticmethod
     # parse, validate, and return the answer as a mixed Fraction
-    def solve(input_string: str) -> str:
+    def solve(input_list: List[str]) -> str:
         """
-        Parses the input string and returns the answer as a mixed fraction
+        Parses the input list and returns the answer as a mixed fraction
         """
-        if len(input_string) == 0: return ''
-        split_string = Fractalgebra.parse_length(input_string)
-        transformed_list = Fractalgebra.transform_input(split_string)
+        is_empty_input = len(list(filter(lambda x: len(x) > 0, input_list))) == 0
+        if is_empty_input: return ''
+        transformed_list = Fractalgebra.transform_input(input_list)
         final_rational = Fractalgebra.reduce_list(transformed_list)
         return RationalNumber.as_mixed_fraction(final_rational)
 
-    @staticmethod
-    # parses the input string
-    def parse_length(input_string: str) -> List[str]:
-        split_input = input_string.split()
-        # if len(split_input) <= 2:
-        #     raise InvalidInputError(f"""Input must follow the pattern <fraction>
-        #      <operator> <fraction>, but was {input_string}""")
-        return split_input
-    
     @staticmethod
     # returns a List[Union[RationalNumber, AllowedOps]];
     # raises InvalidInputError if the input doesn't follow a parseable pattern
