@@ -13,7 +13,7 @@ class RationalNumber:
     def parse_input(input_string: str) -> "RationalNumber":
         # TODO make better regex that will validate edge cases
         pattern: re.Pattern = re.compile(
-            r"(?P<whole>-?\d+_)?(?P<numer>-?\d+)(?P<denom>/-?\d+)?"
+            r"(?P<whole>-?\d+_)?(?P<numer>-?\d+)(?P<denom>/-?\d+)?$"
         )
         match: Optional[re.Match] = pattern.match(input_string)
         if match is None:
