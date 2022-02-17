@@ -20,6 +20,9 @@ mypy = "^0.931"
 flakeheaven = "^0.11.1"
 isort = "^5.10.1"
 
+[tool.poetry.scripts]
+fa = "fractalgebra.main:main"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
