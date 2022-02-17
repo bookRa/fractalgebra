@@ -48,6 +48,7 @@ def test_add_rationals(num1, den1, num2, den2, num_expected, den_expected):
 # Test the Fractalgebra.transform_input method
 @pytest.mark.parametrize("input, expected", [
     (['0'], [RationalNumber(numerator=0, denominator=1)]),
+    (['1/2', '+', '1/2'], [RationalNumber(numerator=1, denominator=2), '+', RationalNumber(numerator=1, denominator=2)]),
 ])
 def test_transform_input(input, expected):
     assert Fractalgebra.transform_input(input) == expected
