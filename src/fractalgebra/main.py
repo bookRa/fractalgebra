@@ -11,31 +11,30 @@ separated by a spaces and an operator (one of +, -, *, or /)
 
 app = typer.Typer()
 
+
 @app.command(
-    context_settings={
-        "allow_extra_args": True,
-        "ignore_unknown_options": True
-        }
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True}
 )
 def main(
     ctx: typer.Context,
-    input: str = typer.Argument('', help = helpstring, show_default=False),
-    ):
+    input: str = typer.Argument("", help=helpstring, show_default=False),
+):
     """
     Perform basic arithmatic on two or more fractions (or mixed number)
     using the pattern <fraction> <operator> <fraction> <operator> <fraction>
-        
+
     """
     # typer.echo(ctx.args)
     # typer.echo(ctx.params)
-    input_list = [ctx.params['input']] + ctx.args
+    input_list = [ctx.params["input"]] + ctx.args
     # typer.echo(input_list)
-    
+
     try:
         fractalgebra_answer: str = Fractalgebra.solve(input_list)
         typer.echo(f"= {fractalgebra_answer}")
     except Exception as e:
-        typer.echo(e)
+        typer.echo(f"Error: {e}")
+
 
 if __name__ == "__main__":
-    app() 
+    app()
