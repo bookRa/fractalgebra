@@ -7,14 +7,13 @@ description = "a simple fractions calculator"
 authors = ["bookRa <omar.abdelbadie1@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repostory = "https://github.com/bookRa/fractalgebra"
+repository = "https://github.com/bookRa/fractalgebra"
 homepage = "https://github.com/bookRa/fractalgebra"
 keywords = ["poetry", "typer", "math"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
     "Environment :: Console",
-    "Framework :: Typer",
     "Operating System :: OS Independent",
-    "Topic :: Software Development :: Architecture"
 ]
 include = [
     "LICENSE",
