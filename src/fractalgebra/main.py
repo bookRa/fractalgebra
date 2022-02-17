@@ -36,5 +36,5 @@ def main(
         typer.echo(f"Error: {e}")
 
 
-if __name__ == "__main__":
+def calc():
     app()

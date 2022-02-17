@@ -2,9 +2,23 @@
 
 [tool.poetry]
 name = "fractalgebra"
-version = "0.1.0"
+version = "0.1.1"
 description = "a simple fractions calculator"
 authors = ["bookRa <omar.abdelbadie1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repostory = "https://github.com/bookRa/fractalgebra"
+homepage = "https://github.com/bookRa/fractalgebra"
+keywords = ["poetry", "typer", "math"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Typer",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Architecture"
+]
+include = [
+    "LICENSE",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -21,7 +35,7 @@ flakeheaven = "^0.11.1"
 isort = "^5.10.1"
 
 [tool.poetry.scripts]
-fa = "fractalgebra.main:main"
+fa = "fractalgebra.main:calc"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

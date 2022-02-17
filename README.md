@@ -1,6 +1,10 @@
 # FractAlgebra
 A simple fraction calculator CLI
 
+## Features
+* Accepts arbitrarily many fractions, not just two at a time
+* returns the answer in lowest common denominator
+
 ## Installing
 
  ### Using `pipx` (simple and quick 🚀)
@@ -12,7 +16,7 @@ A simple fraction calculator CLI
 
  ### Build From Source
 
-## How To Use
+## Usage
 
 ## Development
 ### Building the Project
