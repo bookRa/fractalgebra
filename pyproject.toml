@@ -55,7 +55,7 @@ warn_unreachable = true
 # -- BLACK -- #
 
 [tool.black]
-target-version = ['py38']
+target-version = ['py38', 'py39']
 line-length = 88 
 
 # -- FLAKEHEAVEN -- #
